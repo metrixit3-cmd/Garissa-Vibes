@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kudo Grill & Cafe Garissa | Menu & Ordering</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Unified Navbar with Hover Dropdowns -->
+    <!-- Glassy Sidebar (shared on every page) -->
+    <input type="checkbox" id="sb-toggle" class="sb-toggle" aria-label="Expand or collapse sidebar">
+    <aside class="sidebar" aria-label="Main navigation">
+        <div class="sb-head">
+            <a href="index.html" class="sb-brand" aria-label="Garissa Vibe home">
+                <img class="sb-mark" src="garissa-vibe-mark.svg" alt="">
+                <span class="sb-brand-text"><strong>Garissa Vibe</strong><small>Garissa County guide</small></span>
+            </a>
+            <label for="sb-toggle" class="sb-collapse" title="Expand / collapse sidebar"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></label>
+        </div>
+
+        <label class="sb-search"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input type="search" id="sb-search" placeholder="Search pages" autocomplete="off" aria-label="Search pages"><kbd>/</kbd></label>
+
+        <nav class="sb-nav">
+            <p class="sb-label">Main</p>
+            <a href="index.html" class="sb-link"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg><span class="sb-text">Home</span></a>
+            <a href="about.html" class="sb-link"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span class="sb-text">About</span></a>
+            <p class="sb-label">Explore</p>
+            <details class="sb-group" open>
+                <summary class="sb-link"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v7a2 2 0 0 0 2 2v9"/><path d="M9 3v7a2 2 0 0 1-2 2"/><path d="M17 3c-2.2 1.6-3 4.2-3 7h3v11"/></svg><span class="sb-text">Fast Food</span><span class="sb-badge">5</span><svg class="sb-ico sb-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></summary>
+                <div class="sb-sub">
+                    <a href="kfc.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">KFC Garissa</span></a>
+                    <a href="albaik.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Albaik Garissa</span></a>
+                    <a href="crepes.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Crepes & Grills</span></a>
+                    <a href="kingsburger.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Kings Burger</span></a>
+                    <a href="kudo.html" class="sb-sublink is-active" aria-current="page"><i class="sb-dot"></i><span class="sb-text">Kudo Grill</span></a>
+                </div>
+            </details>
+            <details class="sb-group">
+                <summary class="sb-link"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M10 21v-4h4v4"/></svg><span class="sb-text">Luxury Resorts</span><span class="sb-badge">4</span><svg class="sb-ico sb-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></summary>
+                <div class="sb-sub">
+                    <a href="palmoasis.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Palm Oasis Resort</span></a>
+                    <a href="nomadpalace.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Nomad Palace Hotel</span></a>
+                    <a href="lantan.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Lantan Restaurant & Resort</span></a>
+                    <a href="tanagarden.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Tana River Garden</span></a>
+                </div>
+            </details>
+            <details class="sb-group">
+                <summary class="sb-link"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3L3 6l2 4 3-1v12h8V9l3 1 2-4-5-3a4 4 0 0 1-8 0z"/></svg><span class="sb-text">Designer Brands</span><span class="sb-badge">3</span><svg class="sb-ico sb-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></summary>
+                <div class="sb-sub">
+                    <a href="fashion.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Clothing Design</span></a>
+                    <a href="shoes.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Shoes & Sneakers</span></a>
+                    <a href="watches.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Luxury Watches</span></a>
+                </div>
+            </details>
+            <a href="supplements.html" class="sb-link"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="8.5" width="19" height="7" rx="3.5" transform="rotate(-45 12 12)"/><path d="M9.5 9.5l5 5"/></svg><span class="sb-text">Supplements</span></a>
+            <p class="sb-label">Community</p>
+            <a href="review.html" class="sb-link"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1.1 6.2L12 17.3 6.4 20.3l1.1-6.2L3 9.7l6.2-.9z"/></svg><span class="sb-text">Leave a Review</span></a>
+        </nav>
+
+        <div class="sb-foot">
+            <a href="login.html" class="sb-link sb-login"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="M10 17l5-5-5-5M15 12H3"/></svg><span class="sb-text">Login</span></a>
+            <a href="signup.html" class="sb-link sb-signup"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0M19 8v6M16 11h6"/></svg><span class="sb-text">Sign Up</span></a>
+        </div>
+    </aside>
+
+    <!-- Header Banner -->
+    <section class="hero kudo-hero">
+        <div class="hero-content">
+            <span class="tag kudo-tag">🔥 Flame Grills & Refreshments</span>
+            <h1>Kudo Grill & Cafe Menu</h1>
+            <p>📍 Location: Town Centre | Open Daily 10:00 AM - 11:30 PM</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <!-- Showcase -->
+    <section class="showcase" aria-label="Browse the Collection">
+        <div class="section-header showcase-head">
+            <h2>Browse the Collection</h2>
+            <p>Drag the wheel, swipe, or use the arrow keys to look through every pick.</p>
+        </div>
+        <div class="wheel" data-wheel tabindex="0" aria-roledescription="carousel">
+            <div class="wheel-info" aria-live="polite">
+                <span class="wheel-count"><b data-wheel-index>01</b> / 03</span>
+                <h3 class="wheel-title" data-wheel-title></h3>
+                <p class="wheel-meta" data-wheel-meta></p>
+                <p class="wheel-sub" data-wheel-sub></p>
+                <a class="wheel-cta" data-wheel-cta href="#">View details</a>
+            </div>
+            <ol class="wheel-track">
+                <li class="wheel-item" data-title="Kudo Signature Chicken Grill" data-meta="700 KES" data-sub="Flame Grilled" data-href="https://wa.me/254787509941?text=Hello%2C%20I%20would%20like%20to%20order%20the%20Signature%20Chicken%20Grill%20from%20Kudo%20Garissa" data-cta="Order via WhatsApp" data-external>
+                    <div class="wheel-img kudo-card-img-one"></div>
+                    <span class="wheel-name">Kudo Signature Chicken Grill</span>
+                </li>
+                <li class="wheel-item" data-title="Kudo Special Beef Wrap" data-meta="550 KES" data-sub="Toasted Tortilla" data-href="https://wa.me/254787509941?text=Hello%2C%20I%20would%20like%20to%20order%20the%20Special%20Beef%20Wrap%20from%20Kudo%20Garissa" data-cta="Order via WhatsApp" data-external>
+                    <div class="wheel-img kudo-card-img-two"></div>
+                    <span class="wheel-name">Kudo Special Beef Wrap</span>
+                </li>
+                <li class="wheel-item" data-title="Iced Passion Mojito" data-meta="350 KES" data-sub="Refreshing Drink" data-href="https://wa.me/254787509941?text=Hello%2C%20I%20would%20like%20to%20order%20an%20Iced%20Passion%20Mojito%20from%20Kudo%20Garissa" data-cta="Order via WhatsApp" data-external>
+                    <div class="wheel-img kudo-card-img-three"></div>
+                    <span class="wheel-name">Iced Passion Mojito</span>
+                </li>
+            </ol>
+            <div class="wheel-controls">
+                <span class="wheel-end">01</span>
+                <input class="wheel-range" type="range" min="0" max="2" step="0.01" value="0" aria-label="Drag the wheel">
+                <span class="wheel-end">03</span>
+            </div>
+            <p class="wheel-hint">Drag the wheel</p>
+        </div>
+    </section>
+
+    <div class="container kudo-container">
+        <div class="section-header">
+            <h2>Featured Menu Items</h2>
+            <p>Click order to connect directly via WhatsApp</p>
+        </div>
+
+        <div class="grid">
+            <!-- Item 1 -->
+            <div class="card">
+                <div class="card-img kudo-card-img-one">
+                    <div class="card-overlay"></div>
+                    <span class="tag">700 KES</span>
+                </div>
+                <div class="card-body">
+                    <h3>Kudo Signature Chicken Grill</h3>
+                    <p class="location">Flame Grilled</p>
+                    <p class="desc">Tender, flame-grilled marinated chicken served with spicy wedges and special house sauce.</p>
+                    <a href="https://wa.me/254787509941?text=Hello%2C%20I%20would%20like%20to%20order%20the%20Signature%20Chicken%20Grill%20from%20Kudo%20Garissa" target="_blank" class="btn-card">Order via WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="card">
+                <div class="card-img kudo-card-img-two">
+                    <div class="card-overlay"></div>
+                    <span class="tag">550 KES</span>
+                </div>
+                <div class="card-body">
+                    <h3>Kudo Special Beef Wrap</h3>
+                    <p class="location">Toasted Tortilla</p>
+                    <p class="desc">Juicy shredded beef steak wrapped in a toasted tortilla with fresh veggies and melted cheese.</p>
+                    <a href="https://wa.me/254787509941?text=Hello%2C%20I%20would%20like%20to%20order%20the%20Special%20Beef%20Wrap%20from%20Kudo%20Garissa" target="_blank" class="btn-card">Order via WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="card">
+                <div class="card-img kudo-card-img-three">
+                    <div class="card-overlay"></div>
+                    <span class="tag">350 KES</span>
+                </div>
+                <div class="card-body">
+                    <h3>Iced Passion Mojito</h3>
+                    <p class="location">Refreshing Drink</p>
+                    <p class="desc">Refreshing blend of fresh passion fruit, mint leaves, lime, and sparkling soda.</p>
+                    <a href="https://wa.me/254787509941?text=Hello%2C%20I%20would%20like%20to%20order%20an%20Iced%20Passion%20Mojito%20from%20Kudo%20Garissa" target="_blank" class="btn-card">Order via WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Garissa Vibe. Powered by Pure HTML & CSS.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garissa Vibe | The Ultimate Gateway to Garissa County</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Unified Navbar with Hover Dropdowns & Custom Branding Logo -->
+    <!-- Glassy Sidebar (shared on every page) -->
+    <input type="checkbox" id="sb-toggle" class="sb-toggle" aria-label="Expand or collapse sidebar">
+    <aside class="sidebar" aria-label="Main navigation">
+        <div class="sb-head">
+            <a href="index.html" class="sb-brand" aria-label="Garissa Vibe home">
+                <img class="sb-mark" src="garissa-vibe-mark.svg" alt="">
+                <span class="sb-brand-text"><strong>Garissa Vibe</strong><small>Garissa County guide</small></span>
+            </a>
+            <label for="sb-toggle" class="sb-collapse" title="Expand / collapse sidebar"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></label>
+        </div>
+
+        <label class="sb-search"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input type="search" id="sb-search" placeholder="Search pages" autocomplete="off" aria-label="Search pages"><kbd>/</kbd></label>
+
+        <nav class="sb-nav">
+            <p class="sb-label">Main</p>
+            <a href="index.html" class="sb-link is-active" aria-current="page"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg><span class="sb-text">Home</span></a>
+            <a href="about.html" class="sb-link"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span class="sb-text">About</span></a>
+            <p class="sb-label">Explore</p>
+            <details class="sb-group">
+                <summary class="sb-link"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v7a2 2 0 0 0 2 2v9"/><path d="M9 3v7a2 2 0 0 1-2 2"/><path d="M17 3c-2.2 1.6-3 4.2-3 7h3v11"/></svg><span class="sb-text">Fast Food</span><span class="sb-badge">5</span><svg class="sb-ico sb-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></summary>
+                <div class="sb-sub">
+                    <a href="kfc.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">KFC Garissa</span></a>
+                    <a href="albaik.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Albaik Garissa</span></a>
+                    <a href="crepes.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Crepes & Grills</span></a>
+                    <a href="kingsburger.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Kings Burger</span></a>
+                    <a href="kudo.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Kudo Grill</span></a>
+                </div>
+            </details>
+            <details class="sb-group">
+                <summary class="sb-link"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M10 21v-4h4v4"/></svg><span class="sb-text">Luxury Resorts</span><span class="sb-badge">4</span><svg class="sb-ico sb-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></summary>
+                <div class="sb-sub">
+                    <a href="palmoasis.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Palm Oasis Resort</span></a>
+                    <a href="nomadpalace.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Nomad Palace Hotel</span></a>
+                    <a href="lantan.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Lantan Restaurant & Resort</span></a>
+                    <a href="tanagarden.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Tana River Garden</span></a>
+                </div>
+            </details>
+            <details class="sb-group">
+                <summary class="sb-link"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3L3 6l2 4 3-1v12h8V9l3 1 2-4-5-3a4 4 0 0 1-8 0z"/></svg><span class="sb-text">Designer Brands</span><span class="sb-badge">3</span><svg class="sb-ico sb-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></summary>
+                <div class="sb-sub">
+                    <a href="fashion.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Clothing Design</span></a>
+                    <a href="shoes.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Shoes & Sneakers</span></a>
+                    <a href="watches.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Luxury Watches</span></a>
+                </div>
+            </details>
+            <a href="supplements.html" class="sb-link"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="8.5" width="19" height="7" rx="3.5" transform="rotate(-45 12 12)"/><path d="M9.5 9.5l5 5"/></svg><span class="sb-text">Supplements</span></a>
+            <p class="sb-label">Community</p>
+            <a href="review.html" class="sb-link"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1.1 6.2L12 17.3 6.4 20.3l1.1-6.2L3 9.7l6.2-.9z"/></svg><span class="sb-text">Leave a Review</span></a>
+        </nav>
+
+        <div class="sb-foot">
+            <a href="login.html" class="sb-link sb-login"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="M10 17l5-5-5-5M15 12H3"/></svg><span class="sb-text">Login</span></a>
+            <a href="signup.html" class="sb-link sb-signup"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0M19 8v6M16 11h6"/></svg><span class="sb-text">Sign Up</span></a>
+        </div>
+    </aside>
+
+    <!-- Ultra-Cinematic Hero Section with 3D-Style Image Background -->
+    <section class="hero home-hero">
+        <div class="hero-content home-hero-content">
+            <div class="home-hero-badge">✨ The Premier Digital Gateway to Garissa County</div>
+            <h1 class="home-hero-title">Experience The Best of Garissa Vibe</h1>
+            <p class="home-hero-description">Your ultimate directory for 5-star luxury resorts, elite fast food grills, high-end youth streetwear, watches, and premium fitness supplements.</p>
+            <div class="home-hero-actions">
+                <a href="#dining" class="btn-card home-hero-button home-hero-button--primary">Explore Dining</a>
+                <a href="#resorts" class="btn-card home-hero-button home-hero-button--secondary">View Luxury Resorts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Fast Food & Dining Hub -->
+    <!-- Showcase -->
+    <section class="showcase" aria-label="Featured Across Garissa">
+        <div class="section-header showcase-head">
+            <h2>Featured Across Garissa</h2>
+            <p>Drag the wheel, swipe, or use the arrow keys to browse the best spots and brands.</p>
+        </div>
+        <div class="wheel" data-wheel tabindex="0" aria-roledescription="carousel">
+            <div class="wheel-info" aria-live="polite">
+                <span class="wheel-count"><b data-wheel-index>01</b> / 13</span>
+                <h3 class="wheel-title" data-wheel-title></h3>
+                <p class="wheel-meta" data-wheel-meta></p>
+                <p class="wheel-sub" data-wheel-sub></p>
+                <a class="wheel-cta" data-wheel-cta href="#">View details</a>
+            </div>
+            <ol class="wheel-track">
+                <li class="wheel-item" data-title="KFC Garissa" data-meta="Town Center" data-sub="Finger Lickin&#x27; Good" data-href="kfc.html" data-cta="View Menu &amp; Order">
+                    <div class="wheel-img card-img--kfc"></div>
+                    <span class="wheel-name">KFC Garissa</span>
+                </li>
+                <li class="wheel-item" data-title="Albaik Garissa" data-meta="CBD Garissa" data-sub="Crispy Broasted Chicken" data-href="albaik.html" data-cta="View Menu &amp; Order">
+                    <div class="wheel-img card-img--albaik"></div>
+                    <span class="wheel-name">Albaik Garissa</span>
+                </li>
+                <li class="wheel-item" data-title="Crepes &amp; Grills" data-meta="Township" data-sub="Sweet Crepes &amp; Sizzlers" data-href="crepes.html" data-cta="View Menu &amp; Order">
+                    <div class="wheel-img card-img--crepes"></div>
+                    <span class="wheel-name">Crepes &amp; Grills</span>
+                </li>
+                <li class="wheel-item" data-title="Kings Burger" data-meta="Garissa CBD" data-sub="Gourmet Stacked Burgers" data-href="kingsburger.html" data-cta="View Menu &amp; Order">
+                    <div class="wheel-img card-img--kings-burger"></div>
+                    <span class="wheel-name">Kings Burger</span>
+                </li>
+                <li class="wheel-item" data-title="Kudo Grill &amp; Cafe" data-meta="Town Centre" data-sub="Flame Grills &amp; Mocktails" data-href="kudo.html" data-cta="View Menu &amp; Order">
+                    <div class="wheel-img card-img--kudo"></div>
+                    <span class="wheel-name">Kudo Grill &amp; Cafe</span>
+                </li>
+                <li class="wheel-item" data-title="Palm Oasis Resort" data-meta="Lamu Road" data-sub="Pools, Suites &amp; Kids Park" data-href="palmoasis.html" data-cta="Explore Resort">
+                    <div class="wheel-img card-img--palm-oasis"></div>
+                    <span class="wheel-name">Palm Oasis Resort</span>
+                </li>
+                <li class="wheel-item" data-title="Nomad Palace Hotel" data-meta="Garissa CBD" data-sub="5-Star Hospitality" data-href="nomadpalace.html" data-cta="Explore Hotel">
+                    <div class="wheel-img card-img--nomad-palace"></div>
+                    <span class="wheel-name">Nomad Palace Hotel</span>
+                </li>
+                <li class="wheel-item" data-title="Lantan Restaurant &amp; Resort" data-meta="Prime Location" data-sub="Pools &amp; Presidential Suites" data-href="lantan.html" data-cta="Explore Resort">
+                    <div class="wheel-img card-img--lantan"></div>
+                    <span class="wheel-name">Lantan Restaurant &amp; Resort</span>
+                </li>
+                <li class="wheel-item" data-title="Tana River View Garden" data-meta="Tana River Bridge" data-sub="Riverside Scenery &amp; Park" data-href="tanagarden.html" data-cta="Explore Garden">
+                    <div class="wheel-img card-img--tana-garden"></div>
+                    <span class="wheel-name">Tana River View Garden</span>
+                </li>
+                <li class="wheel-item" data-title="Garissa Designer Clothing" data-meta="Apparel Hub" data-sub="Streetwear &amp; Tailored Style" data-href="fashion.html" data-cta="Shop Clothing">
+                    <div class="wheel-img card-img--clothing"></div>
+                    <span class="wheel-name">Garissa Designer Clothing</span>
+                </li>
+                <li class="wheel-item" data-title="Garissa Footwear Hub" data-meta="Footwear Hub" data-sub="Sneakers &amp; Everyday Classics" data-href="shoes.html" data-cta="Shop Sneakers">
+                    <div class="wheel-img card-img--footwear"></div>
+                    <span class="wheel-name">Garissa Footwear Hub</span>
+                </li>
+                <li class="wheel-item" data-title="Garissa Watch Lounge" data-meta="Luxury Timepieces" data-sub="Swiss Automatic &amp; Chronographs" data-href="watches.html" data-cta="Shop Watches">
+                    <div class="wheel-img card-img--watches"></div>
+                    <span class="wheel-name">Garissa Watch Lounge</span>
+                </li>
+                <li class="wheel-item" data-title="Garissa Health &amp; Supplements" data-meta="Wellness Hub" data-sub="Mass Gainer, Protein &amp; Pre-Workout" data-href="supplements.html" data-cta="Shop Supplements">
+                    <div class="wheel-img card-img--supplements"></div>
+                    <span class="wheel-name">Garissa Health &amp; Supplements</span>
+                </li>
+            </ol>
+            <div class="wheel-controls">
+                <span class="wheel-end">01</span>
+                <input class="wheel-range" type="range" min="0" max="12" step="0.01" value="0" aria-label="Drag the wheel">
+                <span class="wheel-end">13</span>
+            </div>
+            <p class="wheel-hint">Drag the wheel</p>
+        </div>
+    </section>
+
+    <div id="dining" class="container home-section">
+        <div class="section-header home-section-header">
+            <h2>Fast Food & Sizzling Grills</h2>
+            <p>Direct WhatsApp ordering from Garissa's top-rated food spots</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <div class="card-img card-img--kfc"><div class="card-overlay"></div><span class="tag">Town Center</span></div>
+                <div class="card-body"><h3>KFC Garissa</h3><p class="location">Finger Lickin' Good</p><p class="desc">World-famous crispy fried chicken, buckets, zinger burgers, and fries.</p><a href="kfc.html" class="btn-card">View Menu & Order</a></div>
+            </div>
+            <div class="card">
+                <div class="card-img card-img--albaik"><div class="card-overlay"></div><span class="tag">CBD Garissa</span></div>
+                <div class="card-body"><h3>Albaik Garissa</h3><p class="location">Crispy Broasted Chicken</p><p class="desc">Legendary golden broasted chicken with signature garlic sauce.</p><a href="albaik.html" class="btn-card">View Menu & Order</a></div>
+            </div>
+            <div class="card">
+                <div class="card-img card-img--crepes"><div class="card-overlay"></div><span class="tag">Township</span></div>
+                <div class="card-body"><h3>Crepes & Grills</h3><p class="location">Sweet Crepes & Sizzlers</p><p class="desc">Nutella bananas, sizzling meat platters, and refreshing tropical smoothies.</p><a href="crepes.html" class="btn-card">View Menu & Order</a></div>
+            </div>
+            <div class="card">
+                <div class="card-img card-img--kings-burger"><div class="card-overlay"></div><span class="tag">Garissa CBD</span></div>
+                <div class="card-body"><h3>Kings Burger</h3><p class="location">Gourmet Stacked Burgers</p><p class="desc">Flame-grilled double beef patties, loaded cheese fries, and crispy bacon burgers.</p><a href="kingsburger.html" class="btn-card">View Menu & Order</a></div>
+            </div>
+            <div class="card">
+                <div class="card-img card-img--kudo"><div class="card-overlay"></div><span class="tag">Town Centre</span></div>
+                <div class="card-body"><h3>Kudo Grill & Cafe</h3><p class="location">Flame Grills & Mocktails</p><p class="desc">Signature chicken grills, beef wraps, and iced passion mojitos.</p><a href="kudo.html" class="btn-card">View Menu & Order</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2: Luxury Resorts & Hotels -->
+    <div id="resorts" class="container home-section">
+        <div class="section-header home-section-header">
+            <h2>Luxury Resorts & Hotels</h2>
+            <p>Crystal-clear pools, executive rooms, and serene riverside scenery</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <div class="card-img card-img--palm-oasis"><div class="card-overlay"></div><span class="tag">Lamu Road</span></div>
+                <div class="card-body"><h3>Palm Oasis Resort</h3><p class="location">Pools, Suites & Kids Park</p><p class="desc">Spacious swimming pools, children's garden, fine dining, and executive suites.</p><a href="palmoasis.html" class="btn-card home-card-button">Explore Resort</a></div>
+            </div>
+            <div class="card">
+                <div class="card-img card-img--nomad-palace"><div class="card-overlay"></div><span class="tag">Garissa CBD</span></div>
+                <div class="card-body"><h3>Nomad Palace Hotel</h3><p class="location">5-Star Hospitality</p><p class="desc">Executive deluxe rooms, gourmet multi-cuisine restaurant, and conference halls.</p><a href="nomadpalace.html" class="btn-card home-card-button">Explore Hotel</a></div>
+            </div>
+            <div class="card">
+                <div class="card-img card-img--lantan"><div class="card-overlay"></div><span class="tag">Prime Location</span></div>
+                <div class="card-body"><h3>Lantan Restaurant & Resort</h3><p class="location">Pools & Presidential Suites</p><p class="desc">Breathtaking modern pools, secure kids' playground, and elite dining experiences.</p><a href="lantan.html" class="btn-card home-card-button">Explore Resort</a></div>
+            </div>
+            <div class="card">
+                <div class="card-img card-img--tana-garden"><div class="card-overlay"></div><span class="tag">Tana River Bridge</span></div>
+                <div class="card-body"><h3>Tana River View Garden</h3><p class="location">Riverside Scenery & Park</p><p class="desc">Calm natural river breeze, picnic gazebos, kids park, and outdoor barbecue.</p><a href="tanagarden.html" class="btn-card home-card-button">Explore Garden</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3: Designer Brands & Lifestyle -->
+    <div id="fashion" class="container home-section home-section--last">
+        <div class="section-header home-section-header">
+            <h2>Designer Brands & Lifestyle Hub</h2>
+            <p>High-end youth streetwear, luxury watches, and elite fitness supplements</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <div class="card-img card-img--clothing"><div class="card-overlay"></div><span class="tag">Apparel Hub</span></div>
+                <div class="card-body"><h3>Garissa Designer Clothing</h3><p class="location">Streetwear & Tailored Style</p><p class="desc">Browse fleece hoodies, logo tees, leather jackets, tailored suits, and statement denim.</p><a href="fashion.html" class="btn-card">Shop Clothing</a></div>
+            </div>
+            <div class="card">
+                <div class="card-img card-img--footwear"><div class="card-overlay"></div><span class="tag">Footwear Hub</span></div>
+                <div class="card-body"><h3>Garissa Footwear Hub</h3><p class="location">Sneakers & Everyday Classics</p><p class="desc">Find Nike Jordan high-tops, pastel Air Force 1 lows, Flyknit runners, and Converse canvas classics.</p><a href="shoes.html" class="btn-card">Shop Sneakers</a></div>
+            </div>
+            <div class="card">
+                <div class="card-img card-img--watches"><div class="card-overlay"></div><span class="tag">Luxury Timepieces</span></div>
+                <div class="card-body"><h3>Garissa Watch Lounge</h3><p class="location">Swiss Automatic & Chronographs</p><p class="desc">Browse detailed automatic dress watches and classic leather-strap chronographs.</p><a href="watches.html" class="btn-card">Shop Watches</a></div>
+            </div>
+            <div class="card">
+                <div class="card-img card-img--supplements"><div class="card-overlay"></div><span class="tag">Wellness Hub</span></div>
+                <div class="card-body"><h3>Garissa Health & Supplements</h3><p class="location">Mass Gainer, Protein & Pre-Workout</p><p class="desc">High-calorie mass gainers, creatine monohydrate, and advanced workout supplements.</p><a href="supplements.html" class="btn-card">Shop Supplements</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Garissa Vibe. The Ultimate Gateway to Garissa County market palce . Powered by maslah the guy behind the action .</p>
+    </footer>
+
+</body>
+</html>

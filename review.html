@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garissa Vibe | Leave a Review</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Unified Navbar with Hover Dropdowns -->
+    <!-- Glassy Sidebar (shared on every page) -->
+    <input type="checkbox" id="sb-toggle" class="sb-toggle" aria-label="Expand or collapse sidebar">
+    <aside class="sidebar" aria-label="Main navigation">
+        <div class="sb-head">
+            <a href="index.html" class="sb-brand" aria-label="Garissa Vibe home">
+                <img class="sb-mark" src="garissa-vibe-mark.svg" alt="">
+                <span class="sb-brand-text"><strong>Garissa Vibe</strong><small>Garissa County guide</small></span>
+            </a>
+            <label for="sb-toggle" class="sb-collapse" title="Expand / collapse sidebar"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></label>
+        </div>
+
+        <label class="sb-search"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input type="search" id="sb-search" placeholder="Search pages" autocomplete="off" aria-label="Search pages"><kbd>/</kbd></label>
+
+        <nav class="sb-nav">
+            <p class="sb-label">Main</p>
+            <a href="index.html" class="sb-link"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg><span class="sb-text">Home</span></a>
+            <a href="about.html" class="sb-link"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span class="sb-text">About</span></a>
+            <p class="sb-label">Explore</p>
+            <details class="sb-group">
+                <summary class="sb-link"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v7a2 2 0 0 0 2 2v9"/><path d="M9 3v7a2 2 0 0 1-2 2"/><path d="M17 3c-2.2 1.6-3 4.2-3 7h3v11"/></svg><span class="sb-text">Fast Food</span><span class="sb-badge">5</span><svg class="sb-ico sb-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></summary>
+                <div class="sb-sub">
+                    <a href="kfc.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">KFC Garissa</span></a>
+                    <a href="albaik.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Albaik Garissa</span></a>
+                    <a href="crepes.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Crepes & Grills</span></a>
+                    <a href="kingsburger.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Kings Burger</span></a>
+                    <a href="kudo.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Kudo Grill</span></a>
+                </div>
+            </details>
+            <details class="sb-group">
+                <summary class="sb-link"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M10 21v-4h4v4"/></svg><span class="sb-text">Luxury Resorts</span><span class="sb-badge">4</span><svg class="sb-ico sb-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></summary>
+                <div class="sb-sub">
+                    <a href="palmoasis.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Palm Oasis Resort</span></a>
+                    <a href="nomadpalace.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Nomad Palace Hotel</span></a>
+                    <a href="lantan.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Lantan Restaurant & Resort</span></a>
+                    <a href="tanagarden.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Tana River Garden</span></a>
+                </div>
+            </details>
+            <details class="sb-group">
+                <summary class="sb-link"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3L3 6l2 4 3-1v12h8V9l3 1 2-4-5-3a4 4 0 0 1-8 0z"/></svg><span class="sb-text">Designer Brands</span><span class="sb-badge">3</span><svg class="sb-ico sb-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></summary>
+                <div class="sb-sub">
+                    <a href="fashion.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Clothing Design</span></a>
+                    <a href="shoes.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Shoes & Sneakers</span></a>
+                    <a href="watches.html" class="sb-sublink"><i class="sb-dot"></i><span class="sb-text">Luxury Watches</span></a>
+                </div>
+            </details>
+            <a href="supplements.html" class="sb-link"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="8.5" width="19" height="7" rx="3.5" transform="rotate(-45 12 12)"/><path d="M9.5 9.5l5 5"/></svg><span class="sb-text">Supplements</span></a>
+            <p class="sb-label">Community</p>
+            <a href="review.html" class="sb-link is-active" aria-current="page"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1.1 6.2L12 17.3 6.4 20.3l1.1-6.2L3 9.7l6.2-.9z"/></svg><span class="sb-text">Leave a Review</span></a>
+        </nav>
+
+        <div class="sb-foot">
+            <a href="login.html" class="sb-link sb-login"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="M10 17l5-5-5-5M15 12H3"/></svg><span class="sb-text">Login</span></a>
+            <a href="signup.html" class="sb-link sb-signup"><svg class="sb-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0M19 8v6M16 11h6"/></svg><span class="sb-text">Sign Up</span></a>
+        </div>
+    </aside>
+
+    <!-- Header Banner -->
+    <section class="hero review-hero">
+        <div class="hero-content">
+            <span class="tag review-hero-tag">⭐ Community Voice</span>
+            <h1>Review Your Experience</h1>
+            <p>Share your feedback on any resort, restaurant, or store across Garissa!</p>
+        </div>
+    </section>
+
+    <!-- Review Form Container -->
+    <!-- Showcase -->
+    <section class="showcase" aria-label="Pick a Place to Review">
+        <div class="section-header showcase-head">
+            <h2>Pick a Place to Review</h2>
+            <p>Spin through Garissa's favourites, open one, then leave your review below.</p>
+        </div>
+        <div class="wheel" data-wheel tabindex="0" aria-roledescription="carousel">
+            <div class="wheel-info" aria-live="polite">
+                <span class="wheel-count"><b data-wheel-index>01</b> / 13</span>
+                <h3 class="wheel-title" data-wheel-title></h3>
+                <p class="wheel-meta" data-wheel-meta></p>
+                <p class="wheel-sub" data-wheel-sub></p>
+                <a class="wheel-cta" data-wheel-cta href="#">View details</a>
+            </div>
+            <ol class="wheel-track">
+                <li class="wheel-item" data-title="KFC Garissa" data-meta="Town Center" data-sub="Finger Lickin&#x27; Good" data-href="kfc.html" data-cta="View Menu &amp; Order">
+                    <div class="wheel-img card-img--kfc"></div>
+                    <span class="wheel-name">KFC Garissa</span>
+                </li>
+                <li class="wheel-item" data-title="Albaik Garissa" data-meta="CBD Garissa" data-sub="Crispy Broasted Chicken" data-href="albaik.html" data-cta="View Menu &amp; Order">
+                    <div class="wheel-img card-img--albaik"></div>
+                    <span class="wheel-name">Albaik Garissa</span>
+                </li>
+                <li class="wheel-item" data-title="Crepes &amp; Grills" data-meta="Township" data-sub="Sweet Crepes &amp; Sizzlers" data-href="crepes.html" data-cta="View Menu &amp; Order">
+                    <div class="wheel-img card-img--crepes"></div>
+                    <span class="wheel-name">Crepes &amp; Grills</span>
+                </li>
+                <li class="wheel-item" data-title="Kings Burger" data-meta="Garissa CBD" data-sub="Gourmet Stacked Burgers" data-href="kingsburger.html" data-cta="View Menu &amp; Order">
+                    <div class="wheel-img card-img--kings-burger"></div>
+                    <span class="wheel-name">Kings Burger</span>
+                </li>
+                <li class="wheel-item" data-title="Kudo Grill &amp; Cafe" data-meta="Town Centre" data-sub="Flame Grills &amp; Mocktails" data-href="kudo.html" data-cta="View Menu &amp; Order">
+                    <div class="wheel-img card-img--kudo"></div>
+                    <span class="wheel-name">Kudo Grill &amp; Cafe</span>
+                </li>
+                <li class="wheel-item" data-title="Palm Oasis Resort" data-meta="Lamu Road" data-sub="Pools, Suites &amp; Kids Park" data-href="palmoasis.html" data-cta="Explore Resort">
+                    <div class="wheel-img card-img--palm-oasis"></div>
+                    <span class="wheel-name">Palm Oasis Resort</span>
+                </li>
+                <li class="wheel-item" data-title="Nomad Palace Hotel" data-meta="Garissa CBD" data-sub="5-Star Hospitality" data-href="nomadpalace.html" data-cta="Explore Hotel">
+                    <div class="wheel-img card-img--nomad-palace"></div>
+                    <span class="wheel-name">Nomad Palace Hotel</span>
+                </li>
+                <li class="wheel-item" data-title="Lantan Restaurant &amp; Resort" data-meta="Prime Location" data-sub="Pools &amp; Presidential Suites" data-href="lantan.html" data-cta="Explore Resort">
+                    <div class="wheel-img card-img--lantan"></div>
+                    <span class="wheel-name">Lantan Restaurant &amp; Resort</span>
+                </li>
+                <li class="wheel-item" data-title="Tana River View Garden" data-meta="Tana River Bridge" data-sub="Riverside Scenery &amp; Park" data-href="tanagarden.html" data-cta="Explore Garden">
+                    <div class="wheel-img card-img--tana-garden"></div>
+                    <span class="wheel-name">Tana River View Garden</span>
+                </li>
+                <li class="wheel-item" data-title="Garissa Designer Clothing" data-meta="Apparel Hub" data-sub="Streetwear &amp; Tailored Style" data-href="fashion.html" data-cta="Shop Clothing">
+                    <div class="wheel-img card-img--clothing"></div>
+                    <span class="wheel-name">Garissa Designer Clothing</span>
+                </li>
+                <li class="wheel-item" data-title="Garissa Footwear Hub" data-meta="Footwear Hub" data-sub="Sneakers &amp; Everyday Classics" data-href="shoes.html" data-cta="Shop Sneakers">
+                    <div class="wheel-img card-img--footwear"></div>
+                    <span class="wheel-name">Garissa Footwear Hub</span>
+                </li>
+                <li class="wheel-item" data-title="Garissa Watch Lounge" data-meta="Luxury Timepieces" data-sub="Swiss Automatic &amp; Chronographs" data-href="watches.html" data-cta="Shop Watches">
+                    <div class="wheel-img card-img--watches"></div>
+                    <span class="wheel-name">Garissa Watch Lounge</span>
+                </li>
+                <li class="wheel-item" data-title="Garissa Health &amp; Supplements" data-meta="Wellness Hub" data-sub="Mass Gainer, Protein &amp; Pre-Workout" data-href="supplements.html" data-cta="Shop Supplements">
+                    <div class="wheel-img card-img--supplements"></div>
+                    <span class="wheel-name">Garissa Health &amp; Supplements</span>
+                </li>
+            </ol>
+            <div class="wheel-controls">
+                <span class="wheel-end">01</span>
+                <input class="wheel-range" type="range" min="0" max="12" step="0.01" value="0" aria-label="Drag the wheel">
+                <span class="wheel-end">13</span>
+            </div>
+            <p class="wheel-hint">Drag the wheel</p>
+        </div>
+    </section>
+
+    <div class="container review-container">
+        <div class="card review-form-card">
+            <h2 class="review-form-heading">Submit Your Feedback</h2>
+            
+            <form action="index.html" method="GET">
+                <div class="review-field">
+                    <label class="review-label">Your Name</label>
+                    <input type="text" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="review-field">
+                    <label class="review-label">Select Spot / Business</label>
+                    <select>
+                        <option>Lantan Luxury Resort</option>
+                        <option>Palm Oasis Resort</option>
+                        <option>Nomad Palace Hotel</option>
+                        <option>Tana River View Garden</option>
+                        <option>KFC Garissa</option>
+                        <option>Albaik Garissa</option>
+                        <option>Crepes & Grills</option>
+                        <option>Kings Burger</option>
+                        <option>Kudo Grill</option>
+                        <option>Garissa Designer Hub</option>
+                        <option>Garissa Footwear Hub</option>
+                        <option>Health & Supplements</option>
+                    </select>
+                </div>
+
+                <div class="review-field">
+                    <label class="review-label">Rating</label>
+                    <select>
+                        <option>⭐⭐⭐⭐⭐ (5/5 - Excellent)</option>
+                        <option>⭐⭐⭐⭐ (4/5 - Very Good)</option>
+                        <option>⭐⭐⭐ (3/5 - Good)</option>
+                        <option>⭐⭐ (2/5 - Fair)</option>
+                        <option>⭐ (1/5 - Poor)</option>
+                    </select>
+                </div>
+
+                <div class="review-field review-field--last">
+                    <label class="review-label">Your Experience / Review</label>
+                    <textarea rows="5" placeholder="Share details about the service, food, pools, or atmosphere..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-card review-submit-button">Submit Review</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Garissa Vibe. Community Reviews.</p>
+    </footer>
+
+</body>
+</html>
